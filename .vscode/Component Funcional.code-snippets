@@ -7,7 +7,11 @@
 			"import {Text} from 'react-native';",
 			"import Estilo from './estilo';",
 			"",
-			"export default props => <Text style={Estilo.txtG}>$1</Text>;",
+			"export default props => {",
+			"	return(",
+			"		<Text style={Estilo.txtG}>$1</Text>",
+			"	)",
+			"}",
 			
 		],
 		"description": "Log output to console"
