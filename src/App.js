@@ -1,6 +1,8 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import ContadorV2 from './components/contador/ContadorV2';
+import {View, StyleSheet, SafeAreaView} from 'react-native';
+import ParImpar from './components/ParImpar';
+// import ContadorV2 from './components/contador/ContadorV2';
+// import Diferenciar from './components/Diferenciar';
 // import Primeiro from './components/Primeiro';
 // import CompPadrao, {Comp1, Comp2} from './components/Multi';
 // import MinMax from './components/MinMax';
@@ -12,9 +14,11 @@ import ContadorV2 from './components/contador/ContadorV2';
 // import Pai from './components/indireta/Pai';
 
 export default () => (
-  <View style={style.App}>
-    <ContadorV2 />
+  <SafeAreaView style={style.App}>
+    <ParImpar num={3} />
     {/*
+    <Diferenciar />
+    <ContadorV2 />
     <Pai />
     <Pai />
     <Contador inicial={100} passo={3} />
@@ -30,7 +34,7 @@ export default () => (
     <Comp1 />
     <Comp2 />
     <Primeiro /> */}
-  </View>
+  </SafeAreaView>
 );
 
 const style = StyleSheet.create({
